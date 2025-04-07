@@ -1,0 +1,84 @@
+/* Resume.css */
+.resume {
+    padding: 5rem 2rem;
+    background: #ffffff;
+    text-align: center;
+  }
+  
+  .resume-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .resume h2 {
+    font-size: 2.2rem;
+    color: #1a1a2e;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .resume h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #1a1a2e;
+  }
+  
+  .resume-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .resume-btn {
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .resume-btn-primary {
+    background: #1a1a2e;
+    color: white;
+  }
+  
+  .resume-btn-primary:hover {
+    background: #1a1a2e;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .resume-btn-secondary {
+    border: 2px solid #1a1a2e;
+    color: #1a1a2e;
+  }
+  
+  .resume-btn-secondary:hover {
+    background: #1a1a2e;
+    color: white;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .resume-options {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .resume-btn {
+      width: 100%;
+      max-width: 300px;
+      justify-content: center;
+    }
+  }

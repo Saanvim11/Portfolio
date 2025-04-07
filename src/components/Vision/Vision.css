@@ -1,0 +1,56 @@
+/* Vision.css */
+.vision {
+    padding: 5rem 2rem;
+    background: #ffffff;
+  }
+  
+  .vision-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .vision h2 {
+    font-size: 2.2rem;
+    color: #1a1a2e;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .vision h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background:#222271; 
+  }
+  
+  .vision-content {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  
+  .vision-card {
+    flex: 1;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .vision-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .vision-content {
+      flex-direction: column;
+    }
+  }
